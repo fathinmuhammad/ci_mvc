@@ -38,20 +38,28 @@
             <h3>Daftar Mahasiswa</h3>
             <?php if (empty($mahasiswa)) : ?>
                 <div class="alert alert-danger" role="alert">
-                    data mahasiswa tidak ditemukan.
+                    <<<<<<< HEAD data mahasiswa tidak ditemukan.=======data mahasiswa tidak ditemukan.>>>>>>> ce273f10db45f8fa5c5cdade3aeadb8ad910bbd5
                 </div>
             <?php endif; ?>
             <ul class="list-group">
                 <?php foreach ($mahasiswa as $mhs) : ?>
-                    <li class="list-group-item">
+                    <<<<<<< HEAD <li class="list-group-item">
                         <?= $mhs['nama']; ?>
                         <a href="<?= base_url(); ?>mahasiswa/hapus/<?= $mhs['id']; ?>" class="badge badge-danger float-right tombol-hapus">hapus</a>
                         <a href="<?= base_url(); ?>mahasiswa/ubah/<?= $mhs['id']; ?>" class="badge badge-success float-right">ubah</a>
                         <a href="<?= base_url(); ?>mahasiswa/detail/<?= $mhs['id']; ?>" class="badge badge-primary float-right">detail</a>
-                    </li>
-                <?php endforeach; ?>
+                        </li>
+                        =======
+                        <li class="list-group-item">
+                            <?= $mhs['nama']; ?>
+                            <a href="<?= base_url(); ?>mahasiswa/hapus/<?= $mhs['id']; ?>" class="badge badge-danger float-right tombol-hapus">hapus</a>
+                            <a href="<?= base_url(); ?>mahasiswa/ubah/<?= $mhs['id']; ?>" class="badge badge-success float-right">ubah</a>
+                            <a href="<?= base_url(); ?>mahasiswa/detail/<?= $mhs['id']; ?>" class="badge badge-primary float-right">detail</a>
+                        </li>
+                        >>>>>>> ce273f10db45f8fa5c5cdade3aeadb8ad910bbd5
+                    <?php endforeach; ?>
             </ul>
         </div>
     </div>
 
-</div>
+    <<<<<<< HEAD </div>=======</div>>>>>>>> ce273f10db45f8fa5c5cdade3aeadb8ad910bbd5
